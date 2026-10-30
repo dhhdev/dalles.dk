@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blowfish</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Blowfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>da</language>
+    <managingEditor>daniel@dalles.dk (Daniel Hyldebrandt Hemmingsen)</managingEditor>
+    <webMaster>daniel@dalles.dk (Daniel Hyldebrandt Hemmingsen)</webMaster>
+    <copyright>Copy, _right?_ :thinking_face:</copyright>
+    <lastBuildDate>Fri, 30 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>:rocket: Mit CV</title>
+      <link>http://localhost:1313/cv/</link>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+      <author>daniel@dalles.dk (Daniel Hyldebrandt Hemmingsen)</author>
+      <guid>http://localhost:1313/cv/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

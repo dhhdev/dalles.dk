@@ -1,0 +1,30 @@
+disabled = false
+locale = "da"
+label = "Dansk"
+weight = 1
+title = "Blowfish"
+
+[params]
+  displayName = "DA"
+  isoCode = "da"
+  rtl = false
+  # dateFormat = "2 January 2006"
+  logo = "simple-logo.svg"
+  # secondaryLogo = "img/secondary-logo.png"
+  description = "Mit sted, mine tanker - mit CV"
+  copyright = "Copy, _right?_ :thinking_face:"
+
+[params.author]
+  name = "Daniel Hyldebrandt Hemmingsen"
+  email = "daniel@dalles.dk"
+  image = "avatar.jpg"
+  imageQuality = 96
+  headline = "👨‍💻 IT-nørd, med erfaring fra 🚛 Transport Branchen der søger nye veje"
+  # bio = "A little bit about you"
+  links = [
+      { phone = "tel:+4541277070" },
+      { email = "mailto:daniel@dalles.dk" },
+      { github = "https://github.com/dhhdev" },
+      { github_gist = "https://gist.github.com/dhhdev" },
+      { linkedin = "https://linkedin.com/in/daniel-h-hemmingsen/" },
+]

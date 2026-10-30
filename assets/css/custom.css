@@ -1,0 +1,13 @@
+.logo svg {
+    height: 2rem;
+    width: 2rem;
+    margin: 0.5rem;
+}
+
+@layer utilities {
+  .prose {
+    & :where(ul):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+      list-style: none;
+    }
+  }
+}
