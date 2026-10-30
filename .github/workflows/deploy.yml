@@ -38,4 +38,4 @@ jobs:
       - name: Upload Files to cPanel Web Directory
         run: |
           # Uploads all contents of public/ directly into your cPanel web root
-          scp -r public/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_TARGET_DIR }}
+          scp -P {{ secrets.SSH_PORT }} -r public/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_TARGET_DIR }}
