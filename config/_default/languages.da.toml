@@ -12,7 +12,7 @@ title = "Blowfish"
   logo = "simple-logo.svg"
   # secondaryLogo = "img/secondary-logo.png"
   description = "Mit sted, mine tanker - mit CV"
-  copyright = "Copy, _right?_ :thinking_face:"
+  copyright = "Copy, _right?_ :thinking: Daniel Hyldebrandt Hemmingsen"
 
 [params.author]
   name = "Daniel Hyldebrandt Hemmingsen"
