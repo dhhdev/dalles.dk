@@ -33,7 +33,7 @@ jobs:
           if_key_exists: replace
 
       - name: Scan Server Public Keys
-        run: ssh-keyscan -P {{ secrets.SSH_PORT }} -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+        run: ssh-keyscan -p {{ secrets.SSH_PORT }} -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
       - name: Upload Files to cPanel Web Directory
         run: |
