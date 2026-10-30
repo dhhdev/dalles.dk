@@ -1,37 +1,41 @@
-name: Build and Deploy Hugo Site
+name: Deploy Hugo Site via SCP
 
 on:
   push:
     branches:
-      - main
+      - main  # Change to 'master' if your default branch is named master
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository code
+      - name: Checkout Source Code
         uses: actions/checkout@v4
         with:
-          submodules: recursive  # Automatically pulls your Blowfish theme submodule files
-          fetch-depth: 0         # Required for Blowfish to read post modification dates from git
+          submodules: recursive
+          fetch-depth: 0
 
-      - name: Setup Hugo Extended
+      - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
-          extended: true         # Required to process Blowfish's SCSS files
+          extended: true
 
-      - name: Build production site
-        run: hugo --gc --minify
+      - name: Build Static Site
+        run: hugo --minify
 
-      - name: Deploy built files via SSH/Rsync
-        uses: easingthemes/ssh-deploy@v6.0.1
+      - name: Load Private Key into GitHub Runner
+        uses: shimataro/ssh-key-action@v2
         with:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          REMOTE_HOST: ${{ secrets.SSH_HOST }}
-          REMOTE_USER: ${{ secrets.SSH_USER }}
-          REMOTE_PORT: ${{ secrets.SSH_PORT }}
-          SOURCE: "public/"
-          TARGET: ${{ secrets.SSH_TARGET_DIR }}
-          ARGS: "-rlgoDzvc --delete"
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: 'placeholder-will-be-overwritten'
+          if_key_exists: replace
+
+      - name: Scan Server Public Keys
+        run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Upload Files to cPanel Web Directory
+        run: |
+          # Uploads all contents of public/ directly into your cPanel web root
+          scp -r public/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_TARGET_DIR }}
