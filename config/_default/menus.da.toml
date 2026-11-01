@@ -12,7 +12,7 @@
 
 [[main]]
   name = ":rocket: Mit CV"
-  pageRef = "cv"
+  pageRef = "/cv"
   weight = 10
 
 #[[main]]
@@ -58,10 +58,11 @@
 # the copyright notice. Configure as per the main menu above.
 
 
-# [[footer]]
-#   name = "Tags"
-#   pageRef = "tags"
-#   weight = 10
+[[footer]]
+  name = "Privatlivspolitik"
+  pageRef = "/privacy"
+  icon = "fingerprint"
+  weight = 10
 
 # [[footer]]
 #   name = "Categories"

@@ -18,6 +18,9 @@ enableEmoji = true
 
 # googleAnalytics = "G-XXXXXXXXX"
 
+[frontmatter]
+  lastmod = [":git", "lastmod", "date"]
+
 [pagination]
   pagerSize = 100
 
