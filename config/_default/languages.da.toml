@@ -2,7 +2,7 @@ disabled = false
 locale = "da"
 label = "Dansk"
 weight = 1
-title = "Blowfish"
+title = "Dalles Lab"
 
 [params]
   displayName = "DA"
@@ -19,7 +19,7 @@ title = "Blowfish"
   email = "daniel@dalles.dk"
   image = "avatar.jpg"
   imageQuality = 96
-  headline = "👨‍💻 IT-nørd, med erfaring fra 🚛 Transport Branchen der søger nye veje"
+  headline = ":computer: IT-nørd, med erfaring fra :truck: Transport Branchen der søger nye veje"
   # bio = "A little bit about you"
   links = [
       { phone = "tel:+4541277070" },
