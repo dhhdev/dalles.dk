@@ -1,8 +1,8 @@
 ---
 title: ":rocket: Mit CV"
 layout: "simple"
-date: "2026-10-30"
-showAuthor: false
+dropCap: false
+showTableOfContents: false
 showPagination: false
 ---
 
