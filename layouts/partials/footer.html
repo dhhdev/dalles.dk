@@ -56,7 +56,7 @@
         {{ $blowfish := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
           href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>`
         }}
-        {{ i18n "footer.powered_by" (dict "Hugo" $hugo "Theme" $blowfish) | safeHTML }}
+        {{ i18n "footer.powered_by" (dict "Hugo" $hugo "Theme" $blowfish) | emojify | safeHTML }}
       </p>
     {{ end }}
   </div>
