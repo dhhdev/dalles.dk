@@ -1,8 +1,9 @@
 ---
 title: ":rocket: Mit CV"
-layout: "page"
+layout: "simple"
 date: "2026-10-30"
 showAuthor: false
+showPagination: false
 ---
 
 {{< timeline>}}

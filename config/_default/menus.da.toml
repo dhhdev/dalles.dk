@@ -61,7 +61,7 @@
 [[footer]]
   name = "Privatlivspolitik"
   pageRef = "/privacy"
-  icon = "fingerprint"
+  pre = ":fingerprint:"
   weight = 10
 
 # [[footer]]

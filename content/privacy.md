@@ -1,11 +1,10 @@
 ---
-title: "Privatlivspolitik"
+title: ":fingerprint: Privatlivspolitik"
 layout: "simple"
 dropCap: false
 showTableOfContents: false
+showPagination: false
 ---
-
-*Senest opdateret: {{< param lastmod >}}*
 
 ### 1. Generelt
 Denne privatlivspolitik forklarer, hvordan personoplysninger indsamles og behandles på **dalles.dk**. Websiden er en personlig og professionel portefølje bygget som en statisk Hugo-side uden brug af dynamiske databaser.
