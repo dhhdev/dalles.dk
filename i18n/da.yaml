@@ -53,7 +53,7 @@ error:
 footer:
   dark_appearance: "Skift til mørk udseende"
   light_appearance: "Skift til lys udseende"
-  powered_by: "Lavet med {{ .Hugo }} &amp; {{ .Theme }} og en del :coffee:"
+  powered_by: "Lavet med :coffee: i {{ .Hugo }} &amp; {{ .Theme }}"
 
 list:
   externalurl_title: "Link til ekstern hjemmeside"
