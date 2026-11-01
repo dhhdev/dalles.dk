@@ -23,7 +23,7 @@ jobs:
           extended: true
 
       - name: Build Static Site
-        run: hugo --minify
+        run: hugo --minify --enableGitInfo
 
       - name: Load Private Key into GitHub Runner
         uses: shimataro/ssh-key-action@v2
