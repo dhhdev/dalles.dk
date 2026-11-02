@@ -1,5 +1,6 @@
 ---
 title: ":rocket: Mit CV"
+description: "Daniel Hyldebrandt Hemmingsen's CV"
 layout: "simple"
 dropCap: false
 showTableOfContents: false

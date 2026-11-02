@@ -1,5 +1,6 @@
 ---
 title: ":fingerprint: Privatlivspolitik"
+description: "Vi bruger ikke cookies eller anden form for data, men det er altid godt lige at forklare."
 layout: "simple"
 dropCap: false
 showTableOfContents: false

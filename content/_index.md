@@ -1,3 +1,11 @@
+---
+layout: "profile"
+description: "Dalles Lab, her kan man både læse om Daniel men også om hans projekter."
+dropCap: false
+showTableOfContents: false
+showPagination: false
+---
+
 # :microphone: Kort om mig
 
 Jeg bor i en lille by der hedder Nørreby, et stenkast fra Bogense - og er den ret nørdede type. Udover det har jeg to fantatiske bonusbørn, en kæreste og en lille kat.
