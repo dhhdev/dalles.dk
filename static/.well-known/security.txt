@@ -1,4 +1,3 @@
 Contact: mailto:daniel@dalles.dk
 Expires: 2027-10-01T12:00:00.000Z
 Preferred-Languages: da, en
-Canonical: https://dalles.dk
